@@ -4,7 +4,7 @@ export type CharacterFromAPI = {
   birthday: string;
   occupation: string[];
   img: string;
-  status: string;
+  status: 'Alive' | 'Deceased' | 'Unknown' | 'Presumed dead';
   appearance: number[];
   nickname: string;
   portrayed: string;
