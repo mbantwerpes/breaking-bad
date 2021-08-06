@@ -1,12 +1,12 @@
 import type { CharacterFromAPI } from '../types';
 
+const baseUrl = import.meta.env.VITE_API_BASE_URL;
+
 export async function getCharacters(
   nameFilter?: string
 ): Promise<CharacterFromAPI[]> {
   const response = await fetch(
-    `https://www.breakingbadapi.com/api/characters?name=${
-      nameFilter ? nameFilter : ''
-    }`
+    `${baseUrl}characters?name=${nameFilter ? nameFilter : ''}`
   );
   const data: CharacterFromAPI[] = await response.json();
 
