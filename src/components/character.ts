@@ -22,6 +22,9 @@ export function createCharacterCard({
           createElement('h3', {
             innerText: `${name} - ${nickname}`,
             className: styles.cardName,
+            onclick: () => {
+              window.location.href = 'https://google.com';
+            },
           }),
           createElement('div', {
             className: styles.aliveContainer,

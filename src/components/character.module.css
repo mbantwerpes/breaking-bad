@@ -28,7 +28,12 @@
 }
 
 .cardName {
+  cursor: pointer;
   font-size: 1.8rem;
+}
+
+.cardName:hover {
+  color: yellow;
 }
 
 .subheader {
