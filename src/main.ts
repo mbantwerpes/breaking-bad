@@ -1,14 +1,17 @@
-import styles from './style.module.css';
+import styles from './style.css';
 import { createElement } from './utils/createElement';
+import { getCharacters } from './utils/api';
 
 const app = document.querySelector<HTMLDivElement>('#app');
+
+// console.log(await getCharacters());
 
 const mainElement = createElement('main', {
   childElements: [
     createElement('body', {
       childElements: [
         createElement('main', {
-          className: styles.container,
+          className: 'container',
           childElements: [],
         }),
       ],
